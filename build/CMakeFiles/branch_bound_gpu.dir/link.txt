@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/branch_bound_gpu.dir/branch_bound_gpu_generated_busca_local.cu.o  -o branch_bound_gpu  /usr/lib/x86_64-linux-gnu/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.so -lpthread 

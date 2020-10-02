@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guipleite/Documents/P1/branch_bound.cpp
+iostream
+-
+cmath
+-
+iomanip
+-
+vector
+-
+chrono
+-
+tuple
+-
+sstream
+-
+string
+-
+

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guipleite/Documents/P1/busca_local.cpp
+iostream
+-
+cmath
+-
+iomanip
+-
+vector
+-
+chrono
+-
+tuple
+-
+sstream
+-
+string
+-
+random
+-
+

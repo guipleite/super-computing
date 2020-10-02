@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/branch_bound_par.dir/branch_bound_par.cpp.o  -o branch_bound_par  -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/8 /usr/lib/gcc/x86_64-linux-gnu/8/libgomp.so -lpthread 

@@ -97,6 +97,8 @@ struct escolhe_alunos {
 };
 
 int main(){
+    auto begin = std::chrono::high_resolution_clock::now();    
+
     int n,n_alunos,n_projetos,n_choices;
     thrust::device_vector<int> input, projs; //host?
 
@@ -158,27 +160,32 @@ int main(){
                         
     thrust::transform(i, i+sat.size(), sat.begin(),refs);
 
-    // thrust::device_ptr<int> d_ptr = thrust::device_pointer_cast(sat);
-    // int melhor = *(thrust::max_element(d_ptr, d_ptr+iter));
-
+    // Para roddar os testes do Jupyter, comente as linhas abaixo
     for (int i=0; i<iter; i++){
       if(sat[i]>melhor){
         melhor = sat[i];
         in =i;
       }
     } 
-    std::cerr  <<melhor<< " 1\n";
+  //Para rodar o Jupyter comentar a parte a seguir:
+    std::cout  <<melhor<< " 1\n";
 
     for (auto i=aluno_projeto.begin(); i!= aluno_projeto.end(); i++){
-      if(c%n_alunos==0){
+      if(c%n_alunos==0 and c!=0){
         ln++;
-      }        
+      }
+
       if(ln==in){
-        std::cerr << *i <<" " ;
+        std::cout << *i <<" " ;
+        
       }
       c++;
     }
     std::cerr << "\n";
 
-}
+    auto end = std::chrono::high_resolution_clock::now();    
+    auto dur = end - begin;
+    auto ms = std::chrono::duration_cast<std::chrono::microseconds>(dur).count();
+    //Para rodar o Jupyter descomentar a parte a seguir:
+    // std::cout << "\n" << ms;}
 

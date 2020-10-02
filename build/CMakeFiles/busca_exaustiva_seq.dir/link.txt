@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/busca_exaustiva_seq.dir/solucao-ingenua.cpp.o  -o busca_exaustiva_seq 

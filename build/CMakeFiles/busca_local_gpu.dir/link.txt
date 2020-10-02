@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/busca_local_gpu.dir/busca_local_gpu_generated_busca_local.cu.o  -o busca_local_gpu  /usr/lib/x86_64-linux-gnu/libcudart_static.a -ldl /usr/lib/x86_64-linux-gnu/librt.so -lpthread 

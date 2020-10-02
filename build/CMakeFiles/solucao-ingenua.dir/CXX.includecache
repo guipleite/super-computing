@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/guipleite/Desktop/P1/solucao-ingenua.cpp
+iostream
+-
+cmath
+-
+iomanip
+-
+vector
+-
+chrono
+-
+tuple
+-
+sstream
+-
+string
+-
+

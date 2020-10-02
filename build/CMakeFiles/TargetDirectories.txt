@@ -1,0 +1,9 @@
+/home/guipleite/Documents/P1/build/CMakeFiles/rebuild_cache.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/busca_exaustiva_par.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/branch_bound_seq.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/busca_local_seq.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/busca_local_par.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/busca_local_gpu.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/branch_bound_par.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/edit_cache.dir
+/home/guipleite/Documents/P1/build/CMakeFiles/busca_exaustiva_seq.dir

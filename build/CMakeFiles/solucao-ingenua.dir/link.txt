@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/solucao-ingenua.dir/solucao-ingenua.cpp.o  -o solucao-ingenua 

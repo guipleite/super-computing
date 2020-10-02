@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/busca_exaustiva_par.dir/busca_exaustiva.cpp.o  -o busca_exaustiva_par  -Wl,-rpath,/usr/lib/gcc/x86_64-linux-gnu/8 /usr/lib/gcc/x86_64-linux-gnu/8/libgomp.so -lpthread 

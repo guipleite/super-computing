@@ -94,7 +94,7 @@ int main(){
     std::tuple<std::vector<int>,int> melhor ;
     std::tuple<std::vector<int>,int> rando ;
     std::tuple<std::vector<int>,int> buff ;
-    // std::random_device rd; // obtain a random number from hardware
+
     int iter = 0;
     int seed = 0;
 
@@ -132,11 +132,13 @@ int main(){
           n--;
       }
       if(f){
+        //Para rodar o Jupyter comentar a parte a seguir:
         std::cerr << "Inicial " <<satisfacao_atual;
         for (auto i=aluno_projeto.begin(); i!= aluno_projeto.end(); i++){
             std::cerr << " " << *i ;
         }
         std::cerr << "\n";
+
         f=false;
       }
       std::get<0>(rando) = aluno_projeto;
@@ -147,6 +149,7 @@ int main(){
       if( std::get<1>(melhor)< std::get<1>(buff)){
         melhor=buff;
 
+        //Para rodar o Jupyter comentar a parte a seguir:
         std::cerr << "Iteracao " << std::get<1>(melhor);
         for (auto i=std::get<0>(melhor).begin(); i!= std::get<0>(melhor).end(); i++){
             std::cerr << " " << *i ;
@@ -154,6 +157,7 @@ int main(){
         std::cerr << "\n";
       }
     }
+    //Para rodar o Jupyter comentar a parte a seguir:
     std::cout <<std::get<1>(melhor) << " 0\n";
     for (auto i=std::get<0>(melhor).begin(); i!= std::get<0>(melhor).end(); i++){
       std::cout <<  *i << " ";
@@ -162,6 +166,7 @@ int main(){
     auto end = std::chrono::high_resolution_clock::now();    
     auto dur = end - begin;
     auto ms = std::chrono::duration_cast<std::chrono::microseconds>(dur).count();
-    // std::cout << "\n" << ms;
+    //Para rodar o Jupyter descomentar a parte a seguir:
+    std::cout << "\n" << ms;
  
 }

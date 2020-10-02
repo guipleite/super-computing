@@ -17,7 +17,8 @@ std::tuple<std::vector<int>,int> escolhe_alunos(std::vector<std::vector<int>>& p
           std::get<0>(melhor) = aluno_projeto;
           std::get<1>(melhor) = satisfacao_atual;
           flag = true;
-          
+
+          //Para rodar o Jupyter comentar a parte a seguir:
           std::cerr << "Melhor: " << satisfacao_atual;
           for (auto i=aluno_projeto.begin(); i!= aluno_projeto.end(); i++){
             std::cerr << " " << *i ;
@@ -30,6 +31,7 @@ std::tuple<std::vector<int>,int> escolhe_alunos(std::vector<std::vector<int>>& p
           std::get<1>(melhor) = satisfacao_atual; 
           flag = true;
 
+          // //Para rodar o Jupyter comentar a parte a seguir:
           std::cerr << "Melhor: " << satisfacao_atual;
           for (auto i=aluno_projeto.begin(); i!= aluno_projeto.end(); i++){
             std::cerr << " " << *i ;
@@ -113,6 +115,7 @@ int main(){
       }
     }
 
+    //Para rodar o Jupyter comentar a parte a seguir:
     std::cout <<std::get<1>(melhor) << " 1\n";
     for (auto i=std::get<0>(melhor).begin(); i!= std::get<0>(melhor).end(); i++){
       std::cout <<  *i << " ";
@@ -121,5 +124,7 @@ int main(){
     auto end = std::chrono::high_resolution_clock::now();    
     auto dur = end - begin;
     auto ms = std::chrono::duration_cast<std::chrono::microseconds>(dur).count();
+
+    //Para rodar o Jupyter descomentar a parte a seguir:
     // std::cout << "\n" << ms;
 }
